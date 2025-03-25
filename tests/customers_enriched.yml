@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: customers_enriched
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+      - name: email
+        tests:
+          - not_null
+          - unique
+      - name: state
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['NY', 'CA', 'IL', 'TX']

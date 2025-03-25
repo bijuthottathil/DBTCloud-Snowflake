@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw_data
+    schema: MAGNUMSCHEMA
+    tables:
+      - name: raw_customers
+
