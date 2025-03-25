@@ -15,7 +15,7 @@ jobs:
               id: dbt-run
               with:
                 dbt_command: "dbt run"
-                dbt_project_folder: "dbt_sf_project"
+                dbt_project_folder: "dbt_cloud_project"
                 dbt_profile_folder: "dbt_sf_project"
               env:
                 DBT_USER: ${{ secrets.DBT_SF_USER }}
